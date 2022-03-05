@@ -1,0 +1,181 @@
+
+/* || Section recipe */
+.section-recipe h2 {
+    margin-bottom: 0.2em;
+}
+    
+.rating-para p {
+    margin-top: 0;
+}
+
+.section-recipe img {
+    max-height: 70vh;
+    margin: 1em 0;
+    object-fit: cover;
+}
+
+.time-table tr {
+    display: block;
+}
+
+.time-table tr > * {
+    padding: 0.2em 0;
+}
+
+.time-table tr :nth-child(even) {
+    padding-right: 1.5em;
+}
+
+.time-table tr :nth-child(2n + 1) {
+    float: left;
+}
+
+
+table.recipe-details thead th:nth-child(1) {
+    width: 8em;
+}
+
+table.recipe-details th {
+    text-align: left;
+}
+
+
+/* || Section Ingredients */
+
+.section-ingred ul {
+    list-style-type: none;
+    padding: 0 0 0 2em;
+    margin: 0;
+}
+
+/* || Section Nutrition */
+
+.nutri-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.nutri-table caption {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+}
+
+.nutri-table h3 {
+    text-align: left;
+    margin: 0;
+}
+
+.nutri-table caption span {
+    font-size: 1.4rem;
+    display: block;
+    text-align: left;
+}
+
+.nutri-table thead th:nth-child(1) {
+    width: 2em;
+}
+
+.nutri-table thead {
+    display: none;
+}
+
+.nutri-table tr {
+    border-bottom: 1px solid #000;
+}
+
+.nutri-table tr th:nth-child(2) {
+    font-weight: normal;
+}
+
+.nutri-table th {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nutri-table td {
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nutri-table tbody tr:nth-of-type(3) th {
+    text-align: right;
+}
+
+.nutri-table tfoot td {
+    font-size: 1.4rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+}
+    
+/* || Media query for ipads/tablets breakpoint */
+
+@media screen and (min-width: 30.0625em) {
+        
+    /* || Section recipe */
+    
+    .time-table tr :nth-child(even) {
+        padding-right: 1.5em;
+    }
+    
+    .time-table tr :nth-child(4n) {
+        padding-right: 0;
+    }
+
+    .time-table tr :nth-child(2n + 1) {
+        float: none;
+    }
+
+    .time-table tr :nth-child(5n) {
+        float: left;
+    }
+}
+
+/* || Media query for small screens/laptops breakpoint */
+
+@media screen and (min-width: 48.0625em) {
+
+    /* || Section recipe */
+    
+    .time-table tr :nth-child(even) {
+        padding-right: 1.5em;
+    }
+
+    .time-table tr :nth-child(5n) {
+        float: none;
+    }
+
+    .time-table tr :nth-child(7n) {
+        float: left;
+    }
+    
+}
+
+/* || Media query for Desktops/large screens breakpoint */
+
+@media screen and (min-width: 64.0625em) {
+
+    /* || Section Recipe */
+
+    .section-recipe img {
+        max-height: revert;
+        width: 50%;
+    }
+}
+
+/* || Media query for EX screens/TV breakpoint */
+
+@media screen and (min-width: 75.0625em) {
+
+    /* || Section recipe */
+
+    .time-table tr :nth-child(7n) {
+        float: none;
+    }
+}
